@@ -22,7 +22,7 @@ parser.add_argument('data', metavar='DIR', help='path to dataset')
 parser.add_argument('--model-name', type=str, default='resnext101_32x16d_wsl',
                     choices=['resnext101_32x8d', 'resnext101_32x8d_wsl', 'resnext101_32x16d_wsl',
                              'resnext101_32x32d_wsl', 'resnext101_32x48d_wsl'], help='evaluated model')
-parser.add_argument('--distortion-name', type=str, default='resnext101_32x16d_wsl',
+parser.add_argument('--distortion-name', type=str, default='gaussian_noise',
                     choices=['gaussian_noise', 'shot_noise', 'motion_blur', 'zoom_blur', 'brightness', 'translate',
                              'rotate', 'tilt', 'scale', 'snow'], help='distortion name')
 parser.add_argument('--workers', default=5, type=int, help='no of data loading workers')
