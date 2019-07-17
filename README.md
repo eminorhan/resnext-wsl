@@ -1,7 +1,7 @@
 # Robustness properties of Facebook's ResNeXt WSL models
 The code here can be used to reproduce the results reported in the following paper:
 
-[Robustness properties of Facebook's ResNeXt WSL models](https://arxiv.org/abs/1907.????).
+Orhan AE (2019) [Robustness properties of Facebook's ResNeXt WSL models.](https://arxiv.org/abs/1907.????) arXiv:1907.????.
 
 All simulation results reported in the paper are provided in the [`results`](https://github.com/eminorhan/resnext-wsl/tree/master/results) folder. 
 
