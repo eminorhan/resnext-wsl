@@ -49,7 +49,7 @@ where `epsilon` is the normalized perturbation size and `pgd-steps` is the numbe
 ```
 python3 evaluate_shapebias.py /CUECONFLICT/IMGS/DIR/ --model-name 'resnext101_32x16d_wsl'
 ```
-where `/CUECONFLICT/IMGS/DIR/` is the directory containing the shape-texture cue-conflict images. We provide these images in the [`cueconflict_images`](https://github.com/eminorhan/resnext-wsl/tree/master/cueconflict_images) folder. They are copied from Robert Geirhos's shape-vs-texture repository (see [here](https://github.com/rgeirhos/texture-vs-shape/tree/master/stimuli/style-transfer-preprocessed-512)), but with the non-conflicting images (images with the same shape and texture category) removed.
+where `/CUECONFLICT/IMGS/DIR/` is the directory containing the shape-texture cue-conflict images. We provide these images in the [`cueconflict_images`](https://github.com/eminorhan/resnext-wsl/tree/master/cueconflict_images) folder. They are copied from Robert Geirhos's [texture-vs-shape](https://github.com/rgeirhos/texture-vs-shape) repository (see [here](https://github.com/rgeirhos/texture-vs-shape/tree/master/stimuli/style-transfer-preprocessed-512)), but with the non-conflicting images (images with the same shape and texture category) removed.
 
 7. To visualize the learned features of the models, run [`visualize_features.py`](https://github.com/eminorhan/resnext-wsl/blob/master/visualize_features.py), e.g.:
 ```
