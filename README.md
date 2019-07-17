@@ -32,11 +32,13 @@ python3 evaluate_imagenetc.py /IMAGENETP/DIR/ --model-name 'resnext101_32x16d_ws
 ```
 python3 evaluate_blackbox.py /IMAGENET/DIR/ --model-name 'resnext101_32x16d_wsl' --epsilon 0.06
 ```
+where `epsilon` is the normalized perturbation size.
 
 5. To run white-box adversarial attacks on the models, run [`evaluate_whitebox.py`](https://github.com/eminorhan/resnext-wsl/blob/master/evaluate_whitebox.py), e.g.:
 ```
 python3 evaluate_whitebox.py /IMAGENET/DIR/ --model-name 'resnext101_32x16d_wsl' --epsilon 0.06 --pgd-steps 10
 ```
+where `epsilon` is the normalized perturbation size and `pgd-steps` is the number of PGD steps.
 
 6. To evaluate the shape biases of the models, run [`evaluate_shapebias.py`](https://github.com/eminorhan/resnext-wsl/blob/master/evaluate_shapebias.py), e.g.:
 ```
@@ -53,5 +55,3 @@ The code here utilizes code and stimuli from the [texture-vs-shape](https://gith
 Robert Geirhos, the [robustness](https://github.com/hendrycks/robustness) repository by Dan Hendrycks, and the 
 [ImageNet example](https://github.com/pytorch/examples/tree/master/imagenet) from PyTorch. We are also grateful to the authors of
 [Mahajan et al. (2018)](https://arxiv.org/abs/1805.00932) for making their pre-trained ResNeXt WSL models publicly available.
-
-
