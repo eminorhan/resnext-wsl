@@ -19,7 +19,7 @@ In total, there are seven experiments reported in the paper. They can be reprodu
 ```
 python3 evaluate_validation.py /IMAGENET/DIR/ --model-name 'resnext101_32x16d_wsl'
 ```
-Here and below `model-name` should be one of `'resnext101_32x8d', 'resnext101_32x8d_wsl', 'resnext101_32x16d_wsl', 'resnext101_32x32d_wsl', 'resnext101_32x48d_wsl'`. `/IMAGENET/DIR/` is the top-level ImageNet directory (it should contain a `val` directory containing the validation images).
+Here and below `model-name` should be one of `'resnext101_32x8d'`, `'resnext101_32x8d_wsl'`, `'resnext101_32x16d_wsl'`, `'resnext101_32x32d_wsl'`, `'resnext101_32x48d_wsl'`. `/IMAGENET/DIR/` is the top-level ImageNet directory (it should contain a `val` directory containing the validation images).
 
 2. To evaluate the models on ImageNet-C, run [`evaluate_imagenetc.py`](https://github.com/eminorhan/resnext-wsl/blob/master/evaluate_imagenetc.py), e.g.:
 ```
@@ -31,7 +31,7 @@ where `/IMAGENETC/DIR/` is the top-level ImageNet-C directory.
 ```
 python3 evaluate_imagenetc.py /IMAGENETP/DIR/ --model-name 'resnext101_32x16d_wsl' --distortion-name 'gaussian_noise'
 ```
-where `/IMAGENETP/DIR/` is the top-level ImageNet-P directory, and `distortion-name` should be one of `'gaussian_noise', 'shot_noise', 'motion_blur', 'zoom_blur', 'brightness', 'translate', 'rotate', 'tilt', 'scale', 'snow'`.
+where `/IMAGENETP/DIR/` is the top-level ImageNet-P directory, and `distortion-name` should be one of `'gaussian_noise'`, `'shot_noise'`, `'motion_blur'`, `'zoom_blur'`, `'brightness'`, `'translate'`, `'rotate'`, `'tilt'`, `'scale'`, `'snow'`.
 
 4. To run black-box adversarial attacks on the models, run [`evaluate_blackbox.py`](https://github.com/eminorhan/resnext-wsl/blob/master/evaluate_blackbox.py), e.g.:
 ```
