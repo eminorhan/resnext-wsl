@@ -1,7 +1,7 @@
 # Robustness properties of Facebook's ResNeXt WSL models
 The code here can be used to reproduce the results reported in the following paper:
 
-Orhan AE (2019) [Robustness properties of Facebook's ResNeXt WSL models.](https://arxiv.org/abs/1907.????) arXiv:1907.????.
+Orhan AE (2019) [Robustness properties of Facebook's ResNeXt WSL models.](https://arxiv.org/abs/1907.07640) arXiv:1907.07640.
 
 All simulation results reported in the paper are provided in the [`results`](https://github.com/eminorhan/resnext-wsl/tree/master/results) folder. 
 
@@ -52,9 +52,9 @@ where `epsilon` is the normalized perturbation size and `pgd-steps` is the numbe
 
 6. To evaluate the shape biases of the models, run [`evaluate_shapebias.py`](https://github.com/eminorhan/resnext-wsl/blob/master/evaluate_shapebias.py), e.g.:
 ```
-python3 evaluate_shapebias.py /CUECONFLICT/IMGS/DIR/ --model-name 'resnext101_32x16d_wsl'
+python3 evaluate_shapebias.py /CUECONFLICT/DIR/ --model-name 'resnext101_32x16d_wsl'
 ```
-where `/CUECONFLICT/IMGS/DIR/` is the directory containing the shape-texture cue-conflict images. We provide these images in the [`cueconflict_images`](https://github.com/eminorhan/resnext-wsl/tree/master/cueconflict_images) folder. They are copied from Robert Geirhos's [texture-vs-shape](https://github.com/rgeirhos/texture-vs-shape) repository (see [here](https://github.com/rgeirhos/texture-vs-shape/tree/master/stimuli/style-transfer-preprocessed-512)), but with the non-conflicting images (images with the same shape and texture category) removed.
+where `/CUECONFLICT/DIR/` is the directory containing the shape-texture cue-conflict images. We provide these images in the [`cueconflict_images`](https://github.com/eminorhan/resnext-wsl/tree/master/cueconflict_images) folder. They are copied from Robert Geirhos's [texture-vs-shape](https://github.com/rgeirhos/texture-vs-shape) repository (see [here](https://github.com/rgeirhos/texture-vs-shape/tree/master/stimuli/style-transfer-preprocessed-512)), but with the non-conflicting images (images with the same shape and texture category) removed.
 
 
 7. To visualize the learned features of the models, run [`visualize_features.py`](https://github.com/eminorhan/resnext-wsl/blob/master/visualize_features.py), e.g.:
