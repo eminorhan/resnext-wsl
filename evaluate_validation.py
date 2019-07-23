@@ -2,6 +2,7 @@
 import os
 import time
 import argparse
+import numpy as np
 from collections import OrderedDict
 import torch
 import torch.utils.data
@@ -26,7 +27,7 @@ def load_model(model_name):
     "Loads one of the pretrained models."
 
     if model_name in ['resnext101_32x8d_wsl', 'resnext101_32x16d_wsl', 'resnext101_32x32d_wsl',
-                      'resnext101_32x64d_wsl']:
+                      'resnext101_32x48d_wsl']:
         model = torch.hub.load('facebookresearch/WSL-Images', model_name)
     elif model_name == 'resnext101_32x8d':
         model = torchvision.models.resnext101_32x8d(pretrained=True)
