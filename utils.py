@@ -1,4 +1,4 @@
-"""Utils for the shape-texture cue-conflict experiment"""
+"""Utils for the shape-texture cue conflict experiment and ImageNet-A evaluation"""
 
 
 rel_inds = [152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172,
