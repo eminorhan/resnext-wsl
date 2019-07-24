@@ -15,10 +15,6 @@ import torchvision.datasets as datasets
 from calibration_tools import show_calibration_results
 
 
-model_names = ['resnext101_32x8d', 'resnext101_32x8d_wsl', 'resnext101_32x16d_wsl', 'resnext101_32x32d_wsl',
-               'resnext101_32x48d_wsl']
-
-
 parser = argparse.ArgumentParser(description='Evaluate models on ImageNet-A')
 parser.add_argument('data', metavar='DIR', help='path to dataset')
 parser.add_argument('--model-name', type=str, default='resnext101_32x16d_wsl',
