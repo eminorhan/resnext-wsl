@@ -52,6 +52,8 @@ def get_net_results(net, loader):
     confidence = []
     correct = []
 
+    net.eval()
+
     num_correct = 0
     with torch.no_grad():
         for batch_idx, (data, target) in enumerate(loader):
